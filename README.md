@@ -48,6 +48,7 @@ src/
 |---|---|---|
 | GET | /api/health | Verifica que el servidor esté activo |
 | GET | /api/events | Lista de eventos (vacía en esta etapa) |
+| GET | /api/sessions | Estructura inicial de sesiones (vacía en esta etapa) |
 
 ##  Autor
 Jessica Martinez
