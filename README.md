@@ -29,22 +29,27 @@ npm run dev
 
 ## Estructura de carpetas
 ```
-src/
-├── app.js
-├── server.js
-├── config/
-├── routes/
-│   ├── events.router.js
-│   └── sessions.router.js
-├── controllers/
-├── services/
-├── repositories/
-├── dao/
-├── models/
-│   ├── User.js
-│   └── Event.js
-├── middlewares/
-└── utils/
+proyecto-eventos/
+├── src/
+│   ├── app.js                
+│   ├── server.js             
+│   ├── config/
+│   ├── routes/
+│   │   ├── events.router.js
+│   │   └── sessions.router.js
+│   ├── controllers/
+│   ├── services/
+│   ├── repositories/
+│   ├── dao/
+│   ├── models/
+│   │   ├── User.js           
+│   │   └── Event.js          
+│   ├── middlewares/
+│   └── utils/
+├── .env.example              
+├── .gitignore               
+├── package.json
+└── README.md
 ```
 
 ## Rutas disponibles
