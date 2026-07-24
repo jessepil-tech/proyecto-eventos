@@ -28,29 +28,24 @@ npm run dev
 \`\`\`
 
 ## Estructura de carpetas
-\`\`\`
-proyecto-eventos/
-├── src/
-│   ├── app.js                # configura Express (NO levanta el server)
-│   ├── server.js             # levanta el servidor
-│   ├── config/
-│   ├── routes/
-│   │   ├── events.router.js
-│   │   └── sessions.router.js
-│   ├── controllers/
-│   ├── services/
-│   ├── repositories/
-│   ├── dao/
-│   ├── models/
-│   │   ├── User.js           # campos mínimos
-│   │   └── Event.js          # campos mínimos
-│   ├── middlewares/
-│   └── utils/
-├── .env.example              # PORT, NODE_ENV, MONGO_URL, JWT_SECRET
-├── .gitignore                # excluye .env y node_modules
-├── package.json
-└── README.md
-\`\`\`
+```
+src/
+├── app.js
+├── server.js
+├── config/
+├── routes/
+│   ├── events.router.js
+│   └── sessions.router.js
+├── controllers/
+├── services/
+├── repositories/
+├── dao/
+├── models/
+│   ├── User.js
+│   └── Event.js
+├── middlewares/
+└── utils/
+```
 
 ## Rutas disponibles
 | Método | Ruta | Descripción |
