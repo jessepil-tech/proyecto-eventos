@@ -10,7 +10,7 @@ API REST para una plataforma de gestión de eventos e inscripciones. Este proyec
 
 ## Instalación
 \`\`\`bash
-git clone [URL de tu repo]
+git clone https://github.com/jessepil-tech/proyecto-eventos.git
 cd proyecto-eventos
 npm install
 \`\`\`
@@ -29,18 +29,27 @@ npm run dev
 
 ## Estructura de carpetas
 \`\`\`
-src/
-├── app.js
-├── server.js
-├── config/
-├── routes/
-├── controllers/
-├── services/
-├── repositories/
-├── dao/
-├── models/
-├── middlewares/
-└── utils/
+proyecto-eventos/
+├── src/
+│   ├── app.js                # configura Express (NO levanta el server)
+│   ├── server.js             # levanta el servidor
+│   ├── config/
+│   ├── routes/
+│   │   ├── events.router.js
+│   │   └── sessions.router.js
+│   ├── controllers/
+│   ├── services/
+│   ├── repositories/
+│   ├── dao/
+│   ├── models/
+│   │   ├── User.js           # campos mínimos
+│   │   └── Event.js          # campos mínimos
+│   ├── middlewares/
+│   └── utils/
+├── .env.example              # PORT, NODE_ENV, MONGO_URL, JWT_SECRET
+├── .gitignore                # excluye .env y node_modules
+├── package.json
+└── README.md
 \`\`\`
 
 ## Rutas disponibles
