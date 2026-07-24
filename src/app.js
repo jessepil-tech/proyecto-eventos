@@ -6,9 +6,12 @@ const app = express();
 
 app.use(express.json());
 
+
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'Servidor activo' });
+  res.status(200).json({ status: 'ok', message: 'Servidor activo' });
 });
+
+
 app.use('/api/events', eventsRouter);
 app.use('/api/sessions', sessionsRouter);
 
